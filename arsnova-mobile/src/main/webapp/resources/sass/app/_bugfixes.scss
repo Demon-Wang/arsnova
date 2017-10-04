@@ -1,0 +1,85 @@
+/*
+ * This file is part of ARSnova Mobile.
+ * Copyright (C) 2011-2012 Christian Thomas Weber
+ * Copyright (C) 2012-2017 The ARSnova Team
+ *
+ * ARSnova Mobile is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ARSnova Mobile is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with ARSnova Mobile.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+
+/* fix hidden fieldsets in firefox */
+.x-firefox .x-stretched.x-dock-vertical > .x-dock-body {
+	height: auto;
+}
+
+/* fix placeholder on ios safari */
+.x-webkit .x-field-input .x-input-el {
+	-webkit-text-fill-color: initial !important;
+}
+
+/* fix placeholder on microsoft edge */
+.x-windows .x-field-input .x-input-el {
+	opacity: 0.99;
+}
+
+/* fix max width for full streched panels/fields in IE */
+.x-windows.x-ie .x-msgbox .x-dock-body,
+.x-windows.x-ie .x-component-outer,
+.x-windows.x-ie .x-scroll-scroller {
+	width: 100% !important;
+}
+
+/* fix field label overflow in IE */
+.x-windows.x-ie .x-field .x-form-label {
+	overflow: visible;
+}
+
+/* fix alignment of labels for Ext.field.Field elements */
+.x-windows.x-ie .x-label-align-right {
+	-ms-flex-direction: row-reverse !important;
+	flex-direction: row-reverse !important;
+}
+
+/* remove "Sencha Touch GPL3" watermark from charts */
+.x-chart-watermark {
+	opacity: 0;
+}
+
+/* prevent pull-refresh on chrome mobile */
+body.x-android.splashscreenClosed {
+	overflow-y: hidden !important;
+}
+
+/* fix scrolling in microsoft edge browser */
+body.x-windows {
+	touch-action: none !important;
+}
+
+body.x-firefox {
+	/* Override bad CSS code of Sencha Touch which breaks layout in Firefox 49+.
+	 * See https://hacks.mozilla.org/2016/09/firefox-49-fixes-sites-designed-with-webkit-in-mind-and-more/
+	 */
+	.x-button,
+	.x-layout-box,
+	.x-layout-box > .x-layout-box-item {
+		display: flex !important;
+	}
+}
+
+body.x-chrome {
+	/* Workaround for issue with invisible buttons in Chrome 57+. */
+	.x-button {
+		overflow: visible;
+	}
+}

@@ -1,0 +1,8 @@
+*~
+*.bak
+.directory
+/.classpath
+/.project
+/.settings
+/build
+/target

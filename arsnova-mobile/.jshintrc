@@ -1,0 +1,31 @@
+{
+	"browser": true,
+	"devel": true,
+	"curly": true,
+	"eqeqeq": true,
+	"eqnull": true,
+	"forin": true,
+	"immed": true,
+	"latedef": true,
+	"laxbreak": true,
+	"noarg": true,
+	"noempty": true,
+	"nonbsp": true,
+	"quotmark": false,
+	"regexdash": true,
+	"strict": false,
+	"undef": true,
+	"globals": {
+		"ARSnova": true,
+		"Ext": true,
+		"io": true,
+		"marked": true,
+		"hljs": true,
+		"MathJax": true,
+		"Messages": true,
+		"moment": true,
+		"RSVP": true,
+		"Papa": true,
+		"TaskRunner": true
+	}
+}

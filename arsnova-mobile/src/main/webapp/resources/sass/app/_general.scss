@@ -1,0 +1,748 @@
+/*
+ * This file is part of ARSnova Mobile.
+ * Copyright (C) 2011-2012 Christian Thomas Weber
+ * Copyright (C) 2012-2017 The ARSnova Team
+ *
+ * ARSnova Mobile is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ARSnova Mobile is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with ARSnova Mobile.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+.hidden {
+	display: none;
+}
+
+.noBackground {
+	background: none !important;
+}
+
+.noBorder {
+	border: none !important;
+}
+
+.noPadding {
+	padding: 0px !important;
+}
+
+.x-html {
+	a:link {
+		color: $hyperlink-unvisited-color;
+	}
+
+	a:visited {
+		color: $hyperlink-visited-color;
+	}
+
+	a:hover {
+			color: $hyperlink-hover-color;
+	}
+
+	a:active {
+		color: $hyperlink-active-color;
+	}
+}
+
+.userQuestions #canvasWrapper {
+	cursor: pointer;
+}
+
+.noOverflow {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-right: 55px;
+}
+
+.x-form-fieldset-title {
+	.x-innerhtml {
+		white-space: normal;
+	}
+}
+
+.abcOptions {
+	.x-button {
+		width: 33.3%;
+	}
+}
+
+.buttontext {
+	margin-left: 15px;
+}
+
+.alignRight {
+	text-align: right;
+	padding-right: 10px;
+}
+
+.alignLeft {
+	text-align: left;
+	padding-left: 10px;
+}
+
+.x-input-radio:checked + .x-field-mask::after {
+	background: $brand-success;
+}
+
+.x-input-el:checked + .x-field-mask::after {
+	color: $brand-success;
+}
+
+.embeddedPageElement {
+	width: 100%;
+	height:100%;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+code {
+	white-space:pre;
+	white-space:pre-wrap;
+	word-break:break-all;
+	word-wrap:break-word;
+}
+
+.roundedBox .x-html > :last-child,
+.arsnova-mathdown .x-innerhtml p {
+	margin: 0;
+}
+
+.roundedBox {
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+
+	&.questionPanel {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border: $question-container-border-width solid $question-container-border-color;
+	}
+
+	.x-innerhtml.x-html {
+		padding: 0.2em !important;
+	}
+
+	.p.title {
+		font-weight: normal;
+	}
+
+	&>.x-list-item:last-child {
+		border-bottom: none;
+	}
+}
+
+.roundedCorners .x-list-item-first.x-list-header,
+.roundedCorners .x-list-header-swap {
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.sliderField {
+	.sliderInputField {
+		width: 15%;
+		float: right;
+		margin: 5px;
+
+		.sliderInputValue {
+			width: 100%;
+			border: none;
+			height: 2.0em;
+			text-align: center;
+			pointer-events: none;
+		}
+	}
+
+	.x-slider {
+		width: 85%;
+	}
+}
+
+.x-mask-inner {
+	border-radius: 10px 10px 10px 10px;
+}
+
+.gravure {
+	font-size: 1.1em;
+	padding: 8px;
+	border-radius: 10px;
+	background-color: transparent;
+	text-align: center;
+}
+
+.x-carousel-indicator-horizontal {
+	height: 3em;
+
+	&.x-carousel-indicator span {
+		height: 30px;
+		margin: 7.5px 5px;
+		width: 30px;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		cursor: pointer;
+
+		& p {
+			width: 30px;
+			padding: 4px 4px 4px 4.5px;
+			display: block;
+			color: white;
+			text-align: center;
+		}
+	}
+}
+
+.x-list,
+.x-nested-list {
+	.x-scroll-container {
+		background: transparent;
+	}
+}
+
+.x-nested-list {
+	.x-scroll-bar-grid-wrapper {
+		display: none;
+	}
+
+	.x-nested-list-inner {
+		margin-top: 20px;
+	}
+
+	.x-list .x-list-item.x-item-selected.x-list-item-tpl {
+		border-color: transparent;
+		background-color: transparent;
+		background-image: none;
+	}
+
+	.x-list-item.x-list-item-tpl {
+		border-top: none;
+
+		.x-innerhtml {
+			padding: 0;
+		}
+	}
+}
+
+.listCorrectItem {
+	padding: 0 0.25em 0 0.2em;
+}
+
+.x-list-item-correct {
+	color: white !important;
+	background: $brand-success;
+	border-radius: 10px;
+}
+
+.thm-lettering {
+	color: #80ba24;
+	font-weight: bold;
+}
+
+.x-container.x-form,
+.x-nested-list-inner .x-list,
+.forwardListButton.caption {
+	max-width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.x-msgbox {
+	min-width: 310px;
+}
+
+.x-msgbox a, .x-msgbox a:visited {
+	color: rgba(190,224,247,0.9);
+}
+
+.centerFormTitle .x-form-fieldset-title {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.centerFormTitle.hiddenUrl .x-form-fieldset-title {
+	margin-bottom: -9px;
+}
+
+.x-field-checkbox .x-form-label {
+	min-width: 230px;
+}
+
+.x-tabbar-dark .x-tab {
+	color: #fff;
+}
+
+.myCoursesList .x-innerhtml{
+	padding: 0 !important;
+}
+
+.myCoursesList .x-list-item {
+	border: none !important;
+}
+
+.qr-code {
+	width:90%;
+	height:90%;
+	max-width: 700px !important;
+	max-height: 90% !important;
+	background: white !important;
+
+	.x-msgbox-text .x-innerhtml {
+		font-size: 130%;
+		color: black !important;
+	}
+
+	.x-msgbox-inner {
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+
+		img {
+			margin: 10px;
+		}
+	}
+}
+
+.newQuestionWarning {
+	list-style-type: disc;
+	margin-left: 30px;
+	text-align: left;
+
+	li {
+		list-style: initial;
+	}
+}
+
+.dragStyle {
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	margin: -12px 0 0 -15px;
+	text-align: center;
+	font-size: 1.3em;
+	font-family: "arsnova";
+	display: block;
+	float: left;
+}
+
+.selectable {
+	.x-innerhtml {
+		ms-user-select: text;
+		-moz-user-select: text;
+		-webkit-user-select: text;
+	}
+}
+
+.canvasConfiguration {
+	display: block;
+	margin: 0px auto;
+}
+
+.displayInherit {
+	display: inherit;
+}
+
+.x-mask {
+	background: rgba($mask-background-color, $mask-opacity);
+}
+
+.customMaskTextElement {
+	position: absolute;
+	text-align: center;
+	font-size: 28px;
+	color: white;
+	width: 100%;
+	top: 45%;
+
+ 	&.voteClosed {
+ 		text-shadow: 1px 1px 5px $mask-error-text-color;
+ 	}
+
+ 	&.alreadyAnswered {
+ 		text-shadow: 1px 1px 5px $mask-correct-text-color;
+ 	}
+}
+
+.largeImageWindow {
+	max-width: 95% !important;
+	max-height: 95% !important;
+	min-height: 0% !important;
+	min-width: 0% !important;
+}
+
+.gallery-dataview {
+	div {
+		background-color: $background-color !important;
+	}
+}
+
+.myCoursesList {
+	.x-inner,
+	.x-scroll-container {
+		background-color: $background-color;
+	}
+}
+
+.checkItem {
+	font-family: 'Pictos';
+	font-size: 1.6em;
+	text-align: right;
+	line-height: 1.6em;
+	margin-right: 10px;
+	background: none !important;
+	padding: 0px !important;
+
+	&.checked {
+		color: $form-checked-icon-color !important;
+	}
+
+	&.unchecked {
+		color: $form-unchecked-icon-color !important;
+	}
+
+	> span {
+		font-weight: normal;
+		font-size: 1em;
+		text-align: center;
+	}
+}
+
+.paginationSessionList {
+	margin-bottom: 50px !important;
+	overflow: visible;
+
+	.x-form-fieldset {
+		margin-bottom: 0px !important;
+	}
+}
+
+.coursemembersonlyicon:before {
+	position: absolute;
+	top: 5px;
+	text-align: center;
+	font-family: "arsnova";
+	content: "\e613";
+	margin-left: -20px;
+	font-size: 32px;
+}
+
+.coursemembersonlymessage {
+	color: #800;
+	margin-left: 30px;
+}
+
+.newSessionMessageBox .x-innerhtml {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-bottom: 0.5em;
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+}
+
+.inClassForm {
+	margin-left: auto !important;
+	margin-right: auto !important;
+
+	.forwardListButton, .caption {
+		margin-left: 12px;
+		margin-right: 12px;
+		width: auto;
+	}
+}
+
+.standardFieldset .x-form-fieldset-inner {
+	border: none;
+	background-color: transparent;
+
+	& .x-item-disabled {
+		/* Prevent input field from breaking out */
+		overflow-x: hidden;
+	}
+}
+
+.standardFieldset>div>div>div>div:first-child {
+	-webkit-border-top-left-radius: 15px;
+	-webkit-border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.standardFieldset>div>div>div>div:last-child {
+	-webkit-border-bottom-left-radius: 15px;
+	-webkit-border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.x-container .x-dock .x-dock-body .x-form-fieldset-inner,
+.x-form .x-form-inner .x-container .x-dock .x-dock-body .x-form-fieldset-inner {
+	background-color: transparent;
+	border: none;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	-webkit-box-shadow: none;
+}
+
+.rightAligned .x-toggle {
+	float:right;
+	margin-right:1em;
+	margin-top: 3px;
+	padding-bottom: 3px;
+}
+
+.saveQuestionButton {
+	width: 95.15%;
+	margin: 1em auto 30px;
+}
+
+.previewButton {
+	width: 300px;
+}
+
+.newQuestion .x-form-fieldset {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.thmlink {
+	text-decoration: none;
+	color: #333;
+}
+
+.counterText {
+	color: white;
+}
+
+.x-form-fieldset .x-field {
+	background-color: white;
+}
+
+.x-field-radio,
+.x-field-checkbox {
+	.x-form-label {
+		border-right: none;
+	}
+}
+
+.session-toggle-label {
+	border-right: none !important;
+}
+
+.x-spinner .x-input-number {
+	text-align: center !important;
+}
+
+/* Reduce padding around Markdown and Mathjax formatted elements */
+.arsnova-mathdown {
+	padding: 0;
+}
+
+/* Display question categories in ALL CAPS */
+.allCapsHeader .x-list-header,
+.allCapsHeader .x-html > p:first-child {
+	text-transform: uppercase;
+}
+
+.fileUploadFieldset .x-field-text,
+.fileUploadFieldset .x-input-text {
+	border-bottom: none;
+	border-radius: .4em;
+}
+
+.fileUploadButtonFieldset {
+	margin: 0px auto;
+	max-width: 500px;
+	width: 95.15%;
+
+	&.longText {
+		max-width: 604px;
+	}
+}
+
+.fileUploadFieldset {
+	margin: 0.5em 0.5em 1em;
+}
+
+.caption {
+	height: 40px;
+	background: $caption-bg-color;
+
+	&:hover {
+		background-color: $caption-bg-color;
+		cursor: initial !important;
+	}
+}
+
+.resizeableImage:hover {
+	cursor: pointer;
+}
+
+.questionStatisticTitle .x-innerhtml {
+	font-weight: normal;
+	white-space: normal;
+	color: $brand-text;
+	text-align: left;
+	padding: 1em;
+
+	p {
+		margin: 0;
+	}
+}
+
+.detailsRadioField {
+	.x-field-input {
+		min-width: 0;
+	}
+}
+
+.x-msgbox.markdownMessageBox {
+	max-width: 480px;
+	width: 90%;
+}
+
+.dangerLabel {
+	color: $brand-danger;
+}
+
+.loginFieldSet .x-field-text {
+	height: 45px;
+	overflow: hidden;
+	border-radius: .4em;
+	margin: 10px 10px 30px;
+}
+
+.loginFieldSet .x-button-confirm {
+	height: 40px;
+	margin: -10px 10px 0px !important;
+}
+
+.centerText {
+	padding: 10px;
+	text-align: center;
+}
+
+.topPadding {
+	padding-top: 1em;
+}
+
+.joinSessionInput {
+	text-align: center;
+}
+
+.required span {
+	color: $brand-danger;
+}
+
+.formInvalid::-webkit-input-placeholder {
+	color: $brand-danger;
+	opacity: 0.5;
+}
+
+.formInvalid:-moz-placeholder { /* Firefox 18- */
+	color: $brand-danger;
+	opacity: 0.5;
+}
+
+.formInvalid::-moz-placeholder { /* Firefox 19+ */
+	color: $brand-danger;
+	opacity: 0.5;
+}
+
+.formInvalid::-ms-input-placeholder { /* Edge */
+	color: $brand-danger;
+	opacity: 0.5;
+}
+
+.formInvalid:-ms-input-placeholder { /* IE */
+	color: $brand-danger;
+	opacity: 0.5;
+}
+
+.isActive {
+	color: $brand-success;
+}
+
+.x-nested-list .x-list-normal {
+	.x-list-item,
+	.x-list-item:hover {
+		background-color: transparent;
+	}
+}
+
+.softwareDetails {
+	margin-top: 0.75em;
+	font-size: 0.75em;
+	opacity: 0.75;
+}
+
+.exportToClickBox .x-msgbox-text {
+	text-align: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	word-break: normal;
+	word-wrap: break-word;
+}
+
+.importFileField {
+	opacity: 0;
+	width: 0px;
+	height: 0px;
+	padding: 0px;
+    margin: 0 !important;
+}
+
+.importSubjectPrompt {
+	input {
+		border-radius: 8px;
+	    text-align: center;
+	}
+
+	.x-field-input {
+		padding-right: 0px;
+	}
+
+	.x-container.x-field-text {
+		margin: 2px 5px 5px 5px;
+	}
+}
+
+.importExportFilePanel {
+	.x-dock-body {
+		overflow: visible;
+	}
+
+	.x-button.closeButton {
+		margin: 0;
+		height: 30px;
+		font-size: 0.6em;
+		padding: 0 0.4em;
+		border: none;
+		color: $label-font-color;
+		background: transparent;
+		position: absolute;
+		right: 2px;
+		top: -28px;
+	}
+
+	.x-button {
+		margin: 8px;
+	}
+}
+
+.setMaxCaruselWidth {
+	.x-container.x-form {
+		max-width: $carousel-inner-max-width;
+	}
+}

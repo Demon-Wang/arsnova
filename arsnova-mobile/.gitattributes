@@ -1,0 +1,31 @@
+* text=auto
+
+*.cfg           text
+*.css           text
+*.html          text
+*.js            text
+*.json          text
+*.md            text
+*.properties    text
+*.rb            text
+*.scss          text
+*.sh            text
+*.svg           text
+*.txt           text
+*.xml           text
+*.yml           text
+
+*.eot           -text
+*.gif           -text
+*.jar           -text
+*.jpg           -text
+*.otf           -text
+*.png           -text
+*.ttf           -text
+*.xcf           -text
+
+# Do not touch third-party libraries
+/lib/**                         -text
+/src/main/webapp/lib/**         -text
+/src/main/webapp/phonegap/**    -text
+/src/main/webapp/touch/**       -text

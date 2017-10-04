@@ -1,0 +1,173 @@
+/*
+ * This file is part of ARSnova Mobile.
+ * Copyright (C) 2011-2012 Christian Thomas Weber
+ * Copyright (C) 2012-2017 The ARSnova Team
+ *
+ * ARSnova Mobile is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ARSnova Mobile is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with ARSnova Mobile.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+.x-hasbadge .x-badge {
+	-webkit-border-radius: 1em;
+	border-radius: 1em;
+	-webkit-background-clip: padding;
+	background-clip: padding-box;
+	padding: .15em .25em !important;
+	z-index: 30;
+	text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+	-webkit-box-shadow: #000 0 .1em .2em;
+	overflow: hidden;
+	color: $tabbar-notification-badge-text-color !important;
+	border: 2px solid $tabbar-notification-badge-border-color !important;
+	position: absolute;
+	width: auto;
+	min-width: 2em;
+	height: 2em;
+	line-height: 1.2em !important;
+	font-size: .6em !important;
+	top: -0.15em;
+	right: 0px;
+	max-width: 100%;
+	background-image: none;
+	background-color: $tabbar-notification-badge-color !important;
+	display: inline-block;
+}
+
+.x-button-label, .x-hasbadge .x-badge {
+	-webkit-box-flex: 1;
+	box-flex: 1;
+	-webkit-box-align: center;
+	box-align: center;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align: center;
+	font-weight: normal;
+	line-height: 1.2em;
+	display: block;
+	overflow: hidden;
+}
+
+.caption {
+	.questionsBadgeIcon, .feedbackQuestionsBadgeIcon, .answersBadgeIcon,
+	.bluebadgeicon, .redbadgeicon, .unreadFeedbackQuestionsBadgeIcon,
+	.badgeicon, .greybadgeicon, .greenbadgeicon, .orangebadgeicon,
+	.bluebadgeiconfixed, .textbadgeicon, .flashcardBadgeIcon {
+		font-size: 0.6em;
+		display: block;
+	}
+}
+
+.standardListButton .x-hasbadge,
+.forwardListButton .x-hasbadge,
+.answerListButton .x-hasbadge {
+	margin-top: 6px;
+}
+
+.x-list-item {
+	.questionDetailsListBadge,
+	.audiencePanelListBadge {
+		position: inherit;
+		min-height: 0em;
+		border: none;
+		padding: 0;
+	}
+
+	.audiencePanelListBadge .badgefixed {
+		top: 5px;
+	}
+
+	.questionDetailsListBadge .badgefixed {
+		top: 6px;
+	}
+}
+
+.badgeicon, .questionsBadgeIcon, .flashcardBadgeIcon, .feedbackQuestionsBadgeIcon, .unreadFeedbackQuestionsBadgeIcon, .answersBadgeIcon, .greybadgeicon, .bluebadgeicon, .redbadgeicon, .greenbadgeicon, .orangebadgeicon, .textbadgeicon {
+	font-weight: normal;
+	background: $brand-primary;
+	color: white;
+	-webkit-border-radius: 20px;
+	border-radius: 11px;
+	padding: 3px 9px 3px 9px;
+	border: 2px solid transparent;
+	margin-right: 12px;
+}
+
+.questionsBadgeIcon {
+	background: $badge-question-color;
+}
+
+.feedbackQuestionsBadgeIcon {
+	background: $badge-feedback-color;
+}
+
+.unreadFeedbackQuestionsBadgeIcon {
+	background: $badge-unread-feedback-color;
+}
+
+.answersBadgeIcon {
+	background: $badge-answers-color;
+}
+
+.flashcardBadgeIcon {
+	background: $badge-flashcards-color;
+}
+
+.redbadgecolor {
+	color: $default-red-color;
+}
+
+.bluebadgecolor {
+	color: $default-darkblue-color;
+}
+
+.greenbadgecolor {
+	color: $default-green-color;
+}
+
+.orangebadgecolor {
+	color: $default-orange-color;
+}
+
+.redbadgeicon {
+	background: $default-red-color;
+}
+
+.bluebadgeicon {
+	background: $default-darkblue-color;
+}
+
+.greenbadgeicon {
+	background: $default-green-color;
+}
+
+.orangebadgeicon {
+	background: $default-orange-color;
+}
+
+.textbadgeicon {
+	background: transparent;
+	color: $brand-icons;
+	border: none;
+	box-shadow: none;
+	padding: 0;
+}
+
+.withdoublebadge {
+	margin-right: 5px;
+}
+
+.badgefixed {
+	right: 12px;
+	position: absolute;
+	margin-right: 5px;
+}

@@ -1,0 +1,377 @@
+/*
+ * This file is part of ARSnova Mobile.
+ * Copyright (C) 2011-2012 Christian Thomas Weber
+ * Copyright (C) 2012-2017 The ARSnova Team
+ *
+ * ARSnova Mobile is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ARSnova Mobile is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with ARSnova Mobile.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+@import 'theme';
+
+html, body {
+	height: 100%;
+}
+
+.noScriptDiv {
+	text-align: center;
+	align-content: center;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	z-index: 3000;
+	height: 100%;
+	width: 100%;
+	background-color: $background-color;
+}
+
+.noSriptLogo {
+	margin-top: 25px;
+	max-width: 300px;
+}
+
+.appLoadingIndicator {
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	text-align: center;
+	width: 100%;
+	height: 30px;
+}
+
+.appLoadingIndicator > * {
+	background-color: $loading-indicator-primary-color;
+	display: inline-block;
+	height: 30px;
+	margin: 0 5px;
+	width: 30px;
+	opacity: 1.0;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	-webkit-animation-duration: 1.4s;
+
+	/* other */
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-duration: 1.4s;
+}
+
+.appLoadingIndicator div:nth-child(1) {
+	-webkit-animation-name: appLoadingColorsFirstDiv;
+	animation-name: appLoadingColorsFirstDiv;
+}
+
+.appLoadingIndicator div:nth-child(2) {
+	-webkit-animation-name: appLoadingColorsSecondDiv;
+	animation-name: appLoadingColorsSecondDiv;
+}
+
+.appLoadingIndicator div:nth-child(3) {
+	-webkit-animation-name: appLoadingColorsLastDiv;
+	animation-name: appLoadingColorsLastDiv;
+}
+
+@keyframes appLoadingColorsFirstDiv {
+	from { background: $loading-indicator-secondary-color }
+	16.50% { background: $loading-indicator-secondary-color }
+	16.51% { background: $loading-indicator-primary-color }
+	82.50% { background: $loading-indicator-primary-color }
+	82.51% { background: $loading-indicator-secondary-color}
+	to { background: $loading-indicator-secondary-color }
+}
+
+@keyframes appLoadingColorsSecondDiv {
+	from { background: $loading-indicator-primary-color }
+	21.99% { background: $loading-indicator-primary-color }
+	22.00% { background: $loading-indicator-secondary-color }
+	44.00% { background: $loading-indicator-secondary-color }
+	44.01% { background: $loading-indicator-primary-color}
+	to { background: $loading-indicator-primary-color }
+}
+
+@keyframes appLoadingColorsLastDiv {
+	from { background: $loading-indicator-primary-color }
+	49.49% { background: $loading-indicator-primary-color }
+	49.50% { background: $loading-indicator-secondary-color }
+	82.50% { background: $loading-indicator-secondary-color }
+	82.51% { background: $loading-indicator-primary-color}
+	to { background: $loading-indicator-primary-color }
+}
+
+@-webkit-keyframes appLoadingColorsFirstDiv {
+	from { background: $loading-indicator-secondary-color }
+	16.50% { background: $loading-indicator-secondary-color }
+	16.51% { background: $loading-indicator-primary-color }
+	88.00% { background: $loading-indicator-primary-color }
+	88.01% { background: $loading-indicator-secondary-color}
+	to { background: $loading-indicator-secondary-color }
+}
+
+@-webkit-keyframes appLoadingColorsSecondDiv {
+	from { background: $loading-indicator-primary-color }
+	21.99% { background: $loading-indicator-primary-color }
+	22.00% { background: $loading-indicator-secondary-color }
+	44.00% { background: $loading-indicator-secondary-color }
+	44.01% { background: $loading-indicator-primary-color}
+	to { background: $loading-indicator-primary-color }
+}
+
+@-webkit-keyframes appLoadingColorsLastDiv {
+	from { background: $loading-indicator-primary-color }
+	49.49% { background: $loading-indicator-primary-color }
+	49.50% { background: $loading-indicator-secondary-color }
+	82.50% { background: $loading-indicator-secondary-color }
+	82.51% { background: $loading-indicator-primary-color}
+	to { background: $loading-indicator-primary-color }
+}
+
+.showSplashScreenElement {
+	opacity: 1 !important;
+}
+
+.splashScreenContainer {
+	width: 100%;
+	height: 100%;
+	display:block;
+	overflow: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-ms-touch-action: none;
+	-moz-user-select: -moz-none;
+	background: $splashscreen-background-color;
+
+	.container {
+		top: 52%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);;
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		max-width: 500px;
+		position: absolute;
+
+		img {
+			max-width: 500px;
+			max-height: 500px;
+			width: 100%;
+		}
+
+		p {
+			margin-top: 10px;
+			font-size: 1.3em;
+			text-align: center;
+			color: $splashscreen-slogan-text-color;
+		}
+
+		& > * {
+			opacity: 0;
+			-moz-transition: opacity .5s ease-in;
+			-webkit-transition: opacity .5s ease-in;
+			-o-transition: opacity .5s ease-in;
+			transition: opacity .5s ease-in;
+
+			-webkit-transition-delay: .5s;
+			-moz-transition-delay: .5s;
+			-o-transition-delay: .5s;
+			transition-delay: .5s;
+		}
+	}
+}
+
+.circleLoadingInd {
+	left: 50%;
+	margin-top: 20%;
+	-webkit-transform: translate(-50%, -50%);;
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 50px;
+	height: 50px;
+	position: relative;
+
+	div {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		&:before {
+			content: '';
+			display: block;
+			margin: 0 auto;
+			width: 15%;
+			height: 15%;
+			background-color: $splashscreen-loading-dots-color;
+			border-radius: 100%;
+			-webkit-animation: circleBounceDelay 1.2s infinite ease-in-out both;
+			animation: circleBounceDelay 1.2s infinite ease-in-out both;
+		}
+	}
+
+	.circle1 {
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	.circle2 {
+		-webkit-transform: rotate(30deg);
+		-ms-transform: rotate(30deg);
+		transform: rotate(30deg);
+
+		&:before {
+			-webkit-animation-delay: -1.1s;
+			animation-delay: -1.1s;
+		}
+	}
+
+	.circle3 {
+		-webkit-transform: rotate(60deg);
+		-ms-transform: rotate(60deg);
+		transform: rotate(60deg);
+
+		&:before {
+			-webkit-animation-delay: -1s;
+			animation-delay: -1s;
+		}
+	}
+
+	.circle4 {
+		-webkit-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		transform: rotate(90deg);
+
+		&:before {
+			-webkit-animation-delay: -0.9s;
+			animation-delay: -0.9s;
+		}
+	}
+
+	.circle5 {
+		-webkit-transform: rotate(120deg);
+		-ms-transform: rotate(120deg);
+		transform: rotate(120deg);
+
+		&:before {
+			-webkit-animation-delay: -0.8s;
+			animation-delay: -0.8s;
+		}
+	}
+
+	.circle6 {
+		-webkit-transform: rotate(150deg);
+		-ms-transform: rotate(150deg);
+		transform: rotate(150deg);
+
+		&:before {
+			-webkit-animation-delay: -0.7s;
+			animation-delay: -0.7s;
+		}
+	}
+
+	.circle7 {
+		-webkit-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		transform: rotate(180deg);
+
+		&:before {
+			-webkit-animation-delay: -0.6s;
+			animation-delay: -0.6s;
+		}
+	}
+
+	.circle8 {
+		-webkit-transform: rotate(210deg);
+		-ms-transform: rotate(210deg);
+		transform: rotate(210deg);
+
+		&:before {
+			-webkit-animation-delay: -0.5s;
+			animation-delay: -0.5s;
+		}
+	}
+
+	.circle9 {
+		-webkit-transform: rotate(240deg);
+		-ms-transform: rotate(240deg);
+		transform: rotate(240deg);
+
+		&:before {
+			-webkit-animation-delay: -0.4s;
+			animation-delay: -0.4s;
+		}
+	}
+
+	.circle10 {
+		-webkit-transform: rotate(270deg);
+		-ms-transform: rotate(270deg);
+		transform: rotate(270deg);
+
+		&:before {
+			-webkit-animation-delay: -0.3s;
+			animation-delay: -0.3s;
+		}
+	}
+
+	.circle11 {
+		-webkit-transform: rotate(300deg);
+		-ms-transform: rotate(300deg);
+		transform: rotate(300deg);
+
+		&:before {
+			-webkit-animation-delay: -0.2s;
+			animation-delay: -0.2s;
+		}
+	}
+
+	.circle12 {
+		-webkit-transform: rotate(330deg);
+		-ms-transform: rotate(330deg);
+		transform: rotate(330deg);
+
+		&:before {
+			-webkit-animation-delay: -0.1s;
+			animation-delay: -0.1s;
+		}
+	}
+}
+
+@-webkit-keyframes circleBounceDelay {
+	0%, 80%, 100% {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	} 40% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+@keyframes circleBounceDelay {
+	0%, 80%, 100% {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	40% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}

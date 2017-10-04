@@ -1,0 +1,263 @@
+/*
+ * This file is part of ARSnova Mobile.
+ * Copyright (C) 2011-2012 Christian Thomas Weber
+ * Copyright (C) 2012-2017 The ARSnova Team
+ *
+ * ARSnova Mobile is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ARSnova Mobile is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with ARSnova Mobile.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/** default colors **/
+$default-white-color: #fff;
+$default-green-color: #3d9c19;
+//$default-green-color: #07457F; //TransMIT CD
+$default-grey-color: #394a59;
+$default-lightgrey-color: #788895;
+$default-red-color: #971b2f;
+$default-lightblue-color: #00b5e2;
+$default-darkblue-color: #012169;
+$default-orange-color: #ff9600;
+
+
+/** brand configuration **/
+$brand-primary: $default-grey-color;
+$brand-secondary: $default-green-color;
+$brand-success: $default-green-color;
+$brand-info: $default-green-color;
+$brand-warning: $default-orange-color;
+$brand-danger: $default-red-color;
+$brand-text: $default-grey-color;
+$brand-buttons: $default-white-color;
+$brand-icons: $default-grey-color;
+$background-color: #dfe5e6;
+
+
+/** logo configuration **/
+$logo-icon-color: #3d9c19;
+$logo-ars-color: #394a59;
+$logo-nova-color: #3d9c19;
+
+
+/** login icon configuration **/
+$twitter-color: #55acee;
+$facebook-color: #3b5998;
+$google-color: #d34836;
+$arsnova-color: $logo-icon-color;
+$smiley-color: #ffcc00;
+$smiley-bg-color: $default-grey-color;
+
+
+/** label configuration **/
+$label-font-color: $brand-text;
+$label-font-active-color: $brand-secondary;
+$label-font-family: Georgia,"Helvetica Neue",HelveticaNeue,"Helvetica-Neue",Helvetica,"BBAlpha Sans",sans-serif;
+$label-font-weight: normal;
+$label-text-shadow: none;
+
+
+/** splashscreen default colors **/
+$splashscreen-background-color: $background-color;
+$splashscreen-loading-dots-color: $brand-primary;
+$splashscreen-slogan-text-color: $brand-text;
+$loading-indicator-primary-color: $brand-primary;
+$loading-indicator-secondary-color: $brand-secondary;
+
+
+/** default button configuration **/
+$button-bg-color: $brand-buttons;
+$button-icon-color: $brand-icons;
+$button-icon-alternative-color: $brand-secondary;
+$button-confirm-bg-color: $default-orange-color;
+$button-confirm-txt-color: $default-white-color;
+$button-action-bg-color: $brand-primary;
+$button-action-active-bg-color: $brand-info;
+$button-action-txt-color: $default-white-color;
+$button-decline-bg-color: $brand-danger;
+$button-decline-txt-color: $default-white-color;
+$button-pressing-color: #c4c4c4;
+$button-hover-color: #eee;
+$button-border-color: #d0d0d0;
+$button-border-width: 1px;
+$button-toggle-on-color: $brand-success;
+$button-toggle-off-color: #ddd;
+
+
+/** button icon color configuration **/
+$icon-feature-entry-color: $button-icon-alternative-color;
+$icon-questionmark-color: $button-icon-alternative-color;
+$icon-newsession-color: $button-icon-alternative-color;
+$icon-delete-close-icon-color: $brand-danger;
+$icon-release-timer-color: $button-icon-alternative-color;
+$icon-lock-unlocked-color: $button-icon-color;
+$icon-lock-locked-color: $brand-danger;
+$icon-chart-color: $button-icon-alternative-color;
+$icon-comment-color: $default-white-color;
+$icon-comment-border-color: $brand-warning;
+$icon-bullhorn-color: $brand-warning;
+$icon-presenter-color: $brand-primary;
+$icon-hint-color: $brand-warning;
+$icon-solution-color: $brand-warning;
+$icon-warning-color: $brand-warning;
+$icon-danger-color: $brand-danger;
+
+
+/** form color configuration **/
+$form-bg-color: $default-white-color;
+$form-text-color: $brand-text;
+$form-placeholder-color: $default-lightgrey-color;
+$form-placeholder-opacity: 0.7;
+$form-checked-icon-color: $brand-success;
+$form-unchecked-icon-color: #ddd;
+$markdown-button-color: $brand-text;
+$markdown-button-bg-color: $default-white-color;
+
+
+/** list color configuration **/
+$list-text-color: $brand-text;
+$list-bg-color: $default-white-color;
+$list-header-color: $default-lightgrey-color;
+$list-header-unread-color: $brand-danger;
+$list-header-txt-color: $default-white-color;
+$list-selection-color: $brand-warning;
+
+
+/** question container configuration **/
+$question-container-bg-color: $default-white-color;
+$question-container-text-color: $brand-text;
+$question-container-border-width: 3px;
+$question-container-border-color: $default-white-color;
+
+
+/** flashcard front side configuration **/
+$flashcard-front-font-color: $brand-text;
+$flashcard-front-background: #FDF2CD;
+$flashcard-front-background-size: 100%;
+$flashcard-front-border-width: 1px;
+$flashcard-front-border-color: #848484;
+$flashcard-front-border-style: solid;
+
+
+/** flashcard back side configuration **/
+$flashcard-back-font-color: $brand-text;
+$flashcard-back-background: #DAF18B;
+$flashcard-back-background-size: 100%;
+$flashcard-back-border-width: 1px;
+$flashcard-back-border-color: #848484;
+$flashcard-back-border-style: solid;
+
+
+/** toolbar color configuration **/
+$toolbar-bg-color: $brand-secondary;
+$toolbar-title-txt-color: $default-white-color;
+$toolbar-speaker-title-color: $default-white-color;
+$toolbar-button-bg-color: $brand-warning;
+$toolbar-button-txt-color: $default-white-color;
+$toolbar-back-button-bg-color: $brand-buttons;
+$toolbar-back-button-active-bg-color: $brand-buttons;
+$toolbar-back-button-txt-color: $brand-text;
+$toolbar-confirm-button-bg-color: $brand-warning;
+$toolbar-confirm-button-txt-color: $default-white-color;
+$toolbar-correct-button-active-color: $brand-primary;
+$toolbar-correct-button-inactive-color: $brand-warning;
+
+
+/** tabbar icon color configuration **/
+$tabbar-bg-color: $background-color;
+$tabbar-button-label-color: $brand-primary;
+$tabbar-button-icon-color: $brand-primary;
+$tabbar-button-active-icon-color: $brand-success;
+$tabbar-notification-badge-color: $default-white-color;
+$tabbar-notification-badge-text-color: $brand-primary;
+$tabbar-notification-badge-border-color: $default-white-color;
+
+
+/** live feedback configuration **/
+$feedback-ok-background-color: $brand-success; /* can follow */
+$feedback-good-background-color: $brand-warning;  /* faster, please! */
+$feedback-bad-background-color: $brand-danger; /* too fast! */
+$feedback-gone-background-color: $brand-primary; /* you have lost me */
+
+$feedback-release-button-color: $brand-warning;
+$feedback-release-button-txt-color: $default-white-color;
+$feedback-freeze-button-color: $brand-danger;
+$feedback-freeze-button-txt-color: $default-white-color;
+$feedback-freeze-tabBar-icon-color: $brand-warning;
+
+
+/** live vote configuration **/
+$vote-speaker-abcd-option-text-color: $brand-primary;
+$vote-student-abcd-button-color: $default-white-color;
+$vote-student-abcd-button-text-color: $brand-primary;
+$vote-abcd-chart-bar-color: $brand-primary;
+
+
+/** correct/incorrect/abstention bar color configuration **/
+$statistics-correct-color: $brand-success;
+$statistics-incorrect-color: $brand-danger;
+$statistics-abstention-color: $default-grey-color;
+
+
+/** carousel width, indicator and navigation configuration **/
+$carousel-inner-max-width: 80%;
+$carousel-indicator-color: $brand-primary;
+$carousel-indicator-active-color: $brand-secondary;
+$carousel-indicator-unanswered-question-color: $brand-warning;
+$carousel-navigation-button-color: $brand-primary;
+$carousel-navigation-button-pressed-color: $brand-info;
+
+
+/** default badge configuration **/
+$badge-question-color: $brand-primary;
+$badge-feedback-color: $brand-success;
+$badge-unread-feedback-color: $brand-danger;
+$badge-answers-color: $brand-warning;
+$badge-flashcards-color: #0D47A1;
+
+
+/** mask configuration **/
+$mask-error-text-color: $brand-danger;
+$mask-correct-text-color: $brand-success;
+$mask-background-color: $default-darkblue-color;
+$mask-opacity: 0.3;
+
+
+/** countdown timer configuration **/
+$timer-minutes-color: $default-grey-color;
+$timer-seconds-color: $default-orange-color;
+$timer-warning-color: $brand-danger;
+$timer-label-color: $label-font-color;
+$timer-label-font: "Open Sans";
+
+
+/** projector mode color configuration **/
+$projectormode-primary-color: $brand-primary;
+$projectormode-secondary-color: $default-white-color;
+$projectormode-back-button-color: $default-white-color;
+$projectormode-background-color: $background-color;
+$projectormode-active-color: $default-lightgrey-color;
+$projectormode-font-family: Verdana,Geneva,sans-serif;
+$projectormode-text-color: black;
+
+
+/** hyperlink color configuration **/
+$hyperlink-unvisited-color: $default-orange-color !important;
+$hyperlink-visited-color: $default-orange-color !important;
+$hyperlink-hover-color: $default-green-color !important;
+$hyperlink-active-color: $default-green-color !important;
+
+
+/** additional color configurations **/
+$caption-bg-color: $brand-buttons;
+$startscreen-rolechange-alternative-color: $brand-secondary;
+$tooltip-background-color: $brand-primary;
+$tooltip-text-color: white;

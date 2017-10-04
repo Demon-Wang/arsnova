@@ -1,0 +1,520 @@
+/*
+ * This file is part of ARSnova Mobile.
+ * Copyright (C) 2011-2012 Christian Thomas Weber
+ * Copyright (C) 2012-2017 The ARSnova Team
+ *
+ * ARSnova Mobile is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ARSnova Mobile is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with ARSnova Mobile.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+.feedbackStatisticButton {
+	min-height: 0px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.feedbackOkBackground .iconBtn {
+	background: $feedback-ok-background-color;
+}
+
+.feedbackGoodBackground .iconBtn {
+	background: $feedback-good-background-color;
+}
+
+.feedbackBadColor,
+.feedbackBadBackground .iconBtn {
+	background: $feedback-bad-background-color;
+}
+
+.feedbackNoneColor,
+.feedbackNoneBackground .iconBtn {
+	background: $feedback-gone-background-color;
+	color: #000;
+}
+
+.liveClickerOption {
+	.iconBtn {
+		background-color: $vote-student-abcd-button-color;
+
+		.iconBtnImg {
+			margin: 13px 0px 0px 15px !important;
+
+			&:before {
+				color: $vote-student-abcd-button-text-color;
+				position: absolute;
+				text-align: center;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+			}
+		}
+
+		.option-a:before {
+			content: "A";
+		}
+
+		.option-b:before {
+			content: "B";
+		}
+
+		.option-c:before {
+			content: "C";
+		}
+
+		.option-d:before {
+			content: "D";
+		}
+	}
+}
+
+.statisticsButton.x-item-disabled .x-button-label {
+	opacity: 1;
+}
+
+.feedbackStatisticButton.voteButton.smallerMatrixButtons {
+	.iconBtn {
+		width: 70px;
+		height: 70px;
+	}
+
+	.iconBtnImg {
+		margin: 11px 0 0 10.5px;
+	}
+
+	&.liveClickerOption .iconBtnImg {
+		margin: 8px 0 0 10.5px !important;
+	}
+}
+
+.answerListButton {
+	&.x-item-selected .x-innerhtml .answerOptionItem {
+		&.answerOptionCorrectItem:after {
+			text-shadow: 0px 0px 1px $brand-primary;
+		}
+	}
+
+	.x-innerhtml {
+		display: table;
+
+		.answerOptionItem {
+			width: 2em;
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		.answerOptionText {
+			width: 100%;
+			display: table-cell;
+			vertical-align: middle;
+
+			p {
+				position: relative;
+				bottom: 2px;
+				left: 10px;
+			}
+		}
+
+		.answerOptionItem {
+			line-height: 2.25em;
+
+			&.answerOptionItem:before {
+				font-family: "arsnova";
+				content: "\f096";
+				font-size: 1.2em;
+			}
+
+			&.answerOptionCorrectItem:after {
+				font-family: "Pictos";
+				content: "3";
+				font-size: 2.25em;
+				color: $brand-success;
+				text-shadow: 0px 0px 1px white;
+				margin: 0px 0px 0px -21px;
+				opacity: .99;
+			}
+		}
+	}
+}
+
+.x-phone {
+	.matrixButton.smallerActionButton .buttonText {
+		font-size: 0.935em !important;
+	}
+}
+
+.matrixButton {
+	min-height: 130px;
+	padding-left: 3px;
+	padding-right: 3px;
+
+	&.actionButton .buttonText {
+		width: 130px !important;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	&.mediumActionButton {
+		padding-left: 0px;
+		padding-right: 0px;
+
+		.buttonText {
+			width: 120px !important;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+	}
+
+	&.smallerActionButton {
+		padding-left: 0px;
+		padding-right: 0px;
+
+		.buttonText {
+			width: 107px !important;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+	}
+
+	&.manualActionButton .buttonText {
+		display: compact;
+	}
+
+	&.feedbackGoodBackground,
+	&.feedbackOkBackground,
+	&.feedbackBadBackground,
+	&.feedbackNoneBackground {
+		.buttonText {
+			width: 140px !important;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+	}
+}
+
+.matrixButton .iconBtn {
+	border-radius: 7px 7px 7px 7px;
+	display: block;
+	font-family: $label-font-family;
+	font-size: 1.4em;
+	font-weight: normal !important;
+	height: 80px;
+	margin: 0 auto 2.5px;
+	overflow: visible;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	width: 80px;
+
+	.iconBtnImg {
+		width: 48px;
+		height: 48px;
+		margin: 16px 0 0 15px;
+	}
+
+	.x-toggle-field {
+		background: transparent;
+		font-size: 0.65em;
+
+		.x-container {
+			overflow: visible;
+		}
+
+		.x-component-outer {
+			padding: 0;
+			margin: 20px 0 0 2.9px;
+		}
+	}
+}
+
+.matrixButton .buttonText {
+	overflow: visible;
+	width: 90px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 1em !important;
+	padding: 5px 0px 2.5px !important;
+	font-weight: normal !important;
+	white-space: normal !important;
+	line-height: 1.1em !important;
+}
+
+.sessionInfoButton{
+	width: 40px;
+	padding: 0;
+	color: $brand-icons;
+	border: none;
+	background: transparent !important;
+}
+
+.x-nested-list .x-list-item-first .x-button,
+.standardForm>div>div:first-child {
+	-webkit-border-top-left-radius: 15px;
+	-webkit-border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.x-nested-list .x-list-item-last .x-button,
+.standardForm>div>div:last-child {
+	-webkit-border-bottom-left-radius: 15px;
+	-webkit-border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.standardForm {
+	.x-button {
+		width: auto !important;
+		margin-left: 12px !important;
+		margin-right: 12px !important;
+	}
+}
+
+.forwardListButton { /* apple-like forward arrow*/
+	background: $button-bg-color
+		url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAAXNSR0IArs4c6QAAAAZiS0dEALgAuAC41wNsvAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sGEQk7MbF1V5sAAAENSURBVCjPY2CgNigtLS0pKyubSEgdMxqfsbS0tJuRkbGBgYHB3NLS8s+xY8cO49LMhC7AyMgoA5dkYmopLS1NIVbz//v378f///9/D5LYjLKysgCibF69evWvr1+/Bv7///8M1CXMDAwMy0tLS20xXInLSbm5uaIcHBxHGRkZVaFCH//9+2fX09NzCafNMDB58uTXjIyM6UhC/ExMTPPwOhvZ5v///89EEvr479+/JIKas7KyeDg4OLYhOfnH////fZGdjFVzaGgoGw8PzzpGRkYTBgYGhv////9lYGCI7O7uPkwotBkVFRUXMjAwuCKJZXR1dW0gKqr+////BMb+9+9fTXd39xyapG2KAAAvqFz8khrpYwAAAABJRU5ErkJggg==")
+		no-repeat;
+	background-position: 100%;
+	border-radius: 0;
+	height: 45px !important;
+	border-style: solid;
+	border-color: lightgray;
+	border-width: thin;
+
+	&:hover {
+		background-color: $button-hover-color;
+		cursor: pointer;
+	}
+}
+
+.detailsInfoButton {
+	margin: 10px 0 0 10px;
+	color: $brand-icons;
+
+	&:hover {
+		color: $button-pressing-color;
+		cursor: pointer;
+	}
+
+	&:before {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		text-align: center;
+		font-family: "Pictos";
+		font-size: 28px;
+		content: "i";
+	}
+}
+
+.yesnoOptions .x-button {
+	width: 50%;
+	z-index: 0;
+}
+
+.yesnoOptions, .newQuestionOptions .x-segmentedbutton, .saveQuestionButton {
+	max-width: 500px;
+	margin: 20px auto;
+}
+
+.standardListButton>span,
+.forwardListButton>span {
+	text-align: left;
+}
+
+.sessionButtonKeyword {
+	font-style: italic;
+	opacity: 0.5;
+}
+
+.standardListButton, .answerListButton {
+	background: $button-bg-color no-repeat;
+	background-position: 100%;
+	border-radius: 0;
+	border-color: lightgray;
+	border-width: thin;
+}
+
+.standardListButton {
+	height: 45px !important;
+}
+
+.centerButton {
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.x-list .loadMoreButton {
+	width: 280px;
+	background-color: $list-bg-color;
+
+	&:hover {
+		background-color: $button-hover-color;
+		cursor: pointer;
+	}
+}
+
+.answerListButton {
+	&:hover {
+		background-color: $button-hover-color;
+		cursor: pointer;
+	}
+}
+
+.saveButton {
+	margin: 10px;
+	max-width: 340px;
+	height: 40px;
+	width: 95%;
+
+	&.centered {
+		margin: 10px auto;
+	}
+}
+
+.questionRequestButton {
+	margin-top: 15px;
+	margin-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
+
+	.x-button-label {
+		font-size: 1em;
+	}
+}
+
+.login-button {
+	margin: 10px;
+	height: 40px;
+}
+
+.imageUploadButtonLabel {
+	text-align:left;
+	vertical-align:middle;
+}
+
+.imgUploadBtn {
+	border-radius: 0px;
+}
+
+.x-spinner {
+	.x-spinner-button-down {
+		margin-left: 0.5em;
+	}
+
+	.x-spinner-button-up {
+		margin-right: 1em;
+	}
+}
+
+.loadMoreButton {
+	width: 280px;
+	margin: 0 auto;
+	border-radius: 0px 0px 15px 15px !important;
+
+	.x-button-label {
+		text-align: center !important;
+	}
+
+	&:hover {
+		background-color: $button-hover-color;
+		cursor: pointer;
+	}
+}
+
+.voteButtonsPanel,
+.noButtonsVotePanel {
+	background: $background-color;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 10px;
+	border-bottom: none !important;
+
+	.voteButton {
+		height: auto !important;
+	}
+}
+
+.noButtonsVotePanel {
+	.iconBtn,
+	.x-button {
+		background: transparent;
+		border: none;
+
+		&:hover {
+			background-color: transparent;
+			cursor: initial;
+		}
+
+		&.x-button-pressing {
+			background-image: none;
+			background-color: transparent;
+		}
+	}
+
+	.iconBtn .iconBtnImg:before {
+		box-shadow: 0px 0px 4px $smiley-bg-color;
+		border-radius: 50%;
+	}
+
+	.liveClickerOption .iconBtn .iconBtnImg:before {
+		color: $vote-speaker-abcd-option-text-color;
+		box-shadow: none;
+	}
+}
+
+.carouselNavigationElement {
+	top: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	margin: auto;
+	position: absolute;
+	border-top: 45px solid transparent;
+	border-bottom: 45px solid transparent;
+	z-index: 999;
+
+	&.arrow-right {
+		right: 0;
+		margin-right: 10px;
+		border-left: 45px solid $carousel-navigation-button-color;
+
+		&.x-button-pressing {
+			border-left-color: $carousel-navigation-button-pressed-color !important;
+		}
+
+		&:hover {
+			border-left-color: $button-pressing-color;
+			cursor: pointer;
+		}
+	}
+
+	&.arrow-left {
+		left: 0;
+		margin-left: 10px;
+		border-right: 45px solid $carousel-navigation-button-color;
+
+		&.x-button-pressing {
+			border-right-color: $carousel-navigation-button-pressed-color !important;
+		}
+
+		&:hover {
+			border-right-color: $button-pressing-color;
+			cursor: pointer;
+		}
+	}
+}
