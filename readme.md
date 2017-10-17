@@ -1,1 +1,1 @@
-hello word!
+This is just learn arsnova!
